@@ -1,8 +1,7 @@
-
-
-
 <?php
-$greeting = "Привет, Sasha!";
+require_once __DIR__ . '/config.php';
+
+$data = loadSiteData();
 $date = date('d.m.Y H:i');
 ?>
 <!DOCTYPE html>
@@ -10,10 +9,10 @@ $date = date('d.m.Y H:i');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой PHP ывафывафывафвысайт</title>
+    <title>Мой PHP сайт</title>
 </head>
 <body>
-    <h1><?php echo $greeting; ?></h1>
-    <p>Это простой сайт на PHP. Сейчас: <?php echo $date; ?></p>
+    <h1><?= htmlspecialchars($data['greeting']) ?></h1>
+    <p><?= htmlspecialchars($data['subtitle']) ?> Сейчас: <?= $date ?></p>
 </body>
 </html>

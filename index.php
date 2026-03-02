@@ -10,7 +10,7 @@ $date = date('d.m.Y H:i');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой PHP сайт</title>
+    <title>Мой PHP ывафывафывафвысайт</title>
 </head>
 <body>
     <h1><?php echo $greeting; ?></h1>
